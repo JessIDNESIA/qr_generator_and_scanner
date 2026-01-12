@@ -25,4 +25,9 @@ linter:
     # prefer_single_quotes: true  # Uncomment to enable the `prefer_single_quotes` rule
 
 # Additional information about this file can be found at
+analyzer:
+  errors:
+    unused_import: error
+    prefer_const_constructors: error
+    avoid_print: ignore
 # https://dart.dev/guides/language/analysis-options
