@@ -117,7 +117,7 @@ class UserProfileHeader extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Hello, Ade Setiawan',
+              'Hello, Jose Shabra',
               style: const TextStyle(
                 fontSize: 22,
                 fontWeight: FontWeight.bold,

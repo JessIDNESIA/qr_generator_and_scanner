@@ -4,18 +4,15 @@ import 'package:flutter/material.dart';
 
 import 'ui/splash_screen.dart';
 import 'ui/home_screen.dart';
-// import 'ui/qr_generator_screen.dart';
-// import 'ui/qr_scanner_screen.dart';
+import 'ui/qr_generator_screen.dart';
+import 'ui/qr_scanner_screen.dart';
 
 void main() {
   runApp(
     DevicePreview(
       enabled: !kReleaseMode, // mati otomatis saat build release
       defaultDevice: Devices.ios.iPhone11ProMax,
-      devices: [
-        Devices.ios.iPhone11ProMax,
-        Devices.ios.iPadPro11Inches,
-      ],
+      devices: [Devices.ios.iPhone11ProMax, Devices.ios.iPadPro11Inches],
       builder: (context) => const MainApp(),
     ),
   );
@@ -56,10 +53,9 @@ class MainApp extends StatelessWidget {
       routes: {
         '/': (context) => const SplashScreen(),
         '/home': (context) => const HomeScreen(),
-        // '/create': (context) => const QrGeneratorScreen(),
-        // '/scan': (context) => const QrScannerScreen(),
+        '/create': (context) => const QrGeneratorScreen(),
+        '/scan': (context) => const QrScannerScreen(),
       },
     );
   }
 }
-
