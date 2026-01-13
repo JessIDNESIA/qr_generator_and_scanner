@@ -248,3 +248,4 @@ class ScanGuideBottomSheet extends StatelessWidget {
     );
   }
 }
+
